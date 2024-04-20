@@ -1,0 +1,83 @@
+.container{
+    width: 1200px;
+    margin: auto;
+}
+.navbar{
+background-color: rgba(188, 143, 143, 0.323);;
+overflow: hidden;
+height: 60px;
+}
+.navbar .logo{
+float: left;
+width: 30%;
+margin-top: -5px;
+color: rosybrown;
+padding-top: 0px;
+}
+.navbar .links{
+    float: left;
+    width: 70%;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.clearfix{
+    clear: both;
+}
+ ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.navbar .links li {
+    display: inline-block;
+    padding: 10px 15px ;
+    border-bottom: 2px solid transparent;
+}
+.navbar .links li a.active,
+.navbar .links li a:hover{
+    color: white;
+    border-bottom: 2px solid white;
+}
+a{
+    text-decoration: none;
+    color: rosybrown;
+    font-size: 18px;
+}
+
+form{
+    display: flex;
+    gap: 100px;
+    margin: 20px;
+    margin-left: 80px;
+}
+.input{
+    width: 250px;
+    height: 30px;
+background-color: #eee;
+border: 1px solid transparent;
+border-radius: 8px;
+
+}
+a.btn3{
+    display: flex;
+    justify-content: center;
+    border: 1px solid rosybrown;
+    border-radius: 20px;
+   width: 10%;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: px;
+    background-color: #eee;
+    color: rosybrown;
+    margin-left: 650px;
+    font-weight: bold;
+}
+::placeholder{
+    font-size: 18px;
+    text-align: center;
+    color: rosybrown;
+}
+a.btn3:hover{
+    background-color: rgba(188, 143, 143, 0.323);
+    color: rosybrown;
+}

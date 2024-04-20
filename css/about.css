@@ -1,0 +1,91 @@
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+.navbar {
+    background-color: rgba(188, 143, 143, 0.323);
+    ;
+    overflow: hidden;
+    height: 60px;
+}
+
+.navbar .logo {
+    float: left;
+    width: 30%;
+    margin-top: -5px;
+    color: rosybrown;
+    padding-top: 0px;
+}
+
+.navbar .links {
+    float: left;
+    width: 70%;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.clearfix {
+    clear: both;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar .links li {
+    display: inline-block;
+    padding: 10px 15px;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar .links li a.active,
+.navbar .links li a:hover {
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+a {
+    text-decoration: none;
+    color: rosybrown;
+    font-size: 18px;
+}
+
+
+
+
+#img {
+    margin-top: 100px;
+    height: 500px;
+    padding-right: 50px;
+    float: right;
+
+}
+
+#div1 {
+    margin-top: 100px;
+    margin-left: 140px;
+    padding: 30px;
+    background-color: rgba(188, 143, 143, 0.323);
+    ;
+    width: 600px;
+    border-radius: 10px;
+}
+
+#h1 {
+    color: rosybrown;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    padding: 10px;
+    font-style: italic;
+    text-shadow: -2px -2px #DEDEDE;
+}
+
+.p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 23px;
+    color: rosybrown;
+
+}

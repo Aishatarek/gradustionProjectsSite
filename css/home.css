@@ -1,0 +1,217 @@
+@import url('http://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border-radius: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+body {
+    min-height: 100%;
+    background-color: rgba(188, 143, 143, 0.323);
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+nav.logo {
+    display: flex;
+    align-items: center;
+    margin: 0 24px;
+}
+
+.logo .menu-icon {
+    color: rosybrown;
+    font-size: 24px;
+    margin-right: 14px;
+    margin-left: 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.logo .logo-name {
+    color: rosybrown;
+    font-size: 22px;
+    font-weight: 600;
+
+}
+
+nav .sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 260px;
+    padding: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+}
+
+nav.open .sidebar {
+    left: 0;
+}
+
+.sidebar .sidebar-content {
+    display: flex;
+    height: 70%;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 16px;
+}
+
+.sidebar-content .list {
+    list-style: none;
+}
+
+.list .nav-link {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    padding: 14px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.lists .nav-link:hover {
+    background-color: #bc8f8f;
+}
+
+.nav-link .icon {
+    margin-right: 14px;
+    font-size: 20px;
+    color: #707070;
+}
+
+.nav-link .link {
+    font-size: 16px;
+    color: #707070;
+    font-weight: 400;
+}
+
+.lists .nav-link:hover .icon,
+.lists .nav-link:hover .link {
+    color: #fff;
+}
+
+.overlay {
+    position: fixed;
+
+    top: 0;
+    left: -100%;
+    height: 1000vh;
+    width: 200%;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease;
+    pointer-events: none;
+}
+
+nav.open~.overlay {
+    opacity: 1;
+    left: 260px;
+    pointer-events: auto;
+}
+
+
+h1 {
+    padding-top: 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 100px auto;
+    margin-bottom: 10px;
+    color: rosybrown;
+    text-shadow: -3px 2px rosybrown;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 {
+
+    padding-top: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rosybrown;
+    text-transform: capitalize;
+    width: 50%;
+    text-align: center;
+
+    font-size: 25px;
+    margin: 70px auto;
+
+}
+
+.but1 {
+
+    width: 500px;
+    height: 70px;
+    text-align: center;
+    text-decoration: none;
+    background-color: white;
+    color: rosybrown;
+    font-size: 30px;
+    font-weight: 500;
+
+    border-radius: 20px;
+    line-height: 70px;
+    transition: 0.4s;
+    justify-content: space-around;
+    margin-right: 100px;
+    margin-left: 500px;
+
+}
+
+.but1:hover {
+    background: rosybrown;
+    color: white;
+    transition: 0.4s;
+}
+
+.but2 {
+
+    height: 70px;
+    text-align: center;
+    text-decoration: none;
+    background-color: white;
+    color: rosybrown;
+    font-size: 30px;
+    font-weight: 500;
+    border-radius: 20px;
+    line-height: 70px;
+    transition: 0.4s;
+
+}
+
+.but2:hover {
+    background: rosybrown;
+    color: white;
+    transition: 0.4s;
+}
+
+.head,
+.head1 {
+    text-align: center;
+    font-size: 60px;
+}
+
+@media screen and (max-width: 800px) {
+
+    .but1,
+    .but2 {
+        margin-left: 0px;
+        display: block;
+        width: 250px;
+        font-size: 20px;
+        margin: auto;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+}

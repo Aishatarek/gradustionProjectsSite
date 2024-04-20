@@ -1,0 +1,14 @@
+body{
+    background-color: rgb(235, 187, 187);
+}
+div{
+    background-color: #eee;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px black;
+    padding:20px;
+    margin:60px;
+    margin-left: 250px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:20px;
+    width: 700px;
+}

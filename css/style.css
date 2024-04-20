@@ -1,0 +1,95 @@
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+.navbar {
+    background-color: rgba(188, 143, 143, 0.323);
+    overflow: hidden;
+    height: 60px;
+}
+
+.navbar .logo {
+    float: left;
+    width: 30%;
+    margin-top: -5px;
+    color: rosybrown;
+    padding-top: 0px;
+}
+
+.navbar .links {
+    float: left;
+    width: 70%;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.clearfix {
+    clear: both;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar .links li {
+    display: inline-block;
+    padding: 10px 15px;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar .links li a.active,
+.navbar .links li a:hover {
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+a {
+    text-decoration: none;
+    color: rosybrown;
+    font-size: 18px;
+}
+
+
+img {
+    width: 500px;
+    margin-left: 500px;
+    padding-top: 40px;
+
+}
+
+#fhead {
+    text-align: center;
+    font-size: 50px;
+    color: rosybrown;
+
+}
+
+.divs {
+    background-color: rgba(188, 143, 143, 0.323);
+    padding: 30px;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 50px;
+}
+
+.divs h1 {
+    color: rosybrown;
+    font-style: italic;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.divs p,
+li {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+.link {
+    /* text-decoration: underline; */
+    color: blue;
+    font-size: 25px;
+}

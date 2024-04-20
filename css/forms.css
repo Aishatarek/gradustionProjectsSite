@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #fec107;
+  padding: 0 10px;
+    
+}
+
+.wrapper{
+    max-width: 500px;
+    width: 100%;
+    
+    background: #fff;
+    margin: 20px auto;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+    padding: 30px;
+  }
+
+  .wrapper .title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #fec107;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  form{
+    width: 100%;
+  }
+  .wrapper  .field{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+  .wrapper  .field label{
+    width: 200px;
+    color: #757575;
+    margin-right: 10px;
+   font-size: 14px;
+ }
+
+ .wrapper form .field .input,
+.wrapper form .field .textarea{
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.wrapper form .field .textarea{
+    width: 100%;
+    height: 125px;
+    resize: none;
+  }
+  .wrapper form .field .control{
+    position: relative;
+    width: 100%;
+    height: 37px;
+  }
+  .wrapper form .field .control:before{
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    border: 8px solid;
+    border-color: #d5dbd9 transparent transparent transparent;
+    pointer-events: none;
+  }
+  .wrapper form .field .control select{
+    -webkit-appearance: none;
+    -moz-appearance:   none;
+    appearance:        none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 1px solid #d5dbd9;
+    border-radius: 3px;
+  }
+  .wrapper form .field .input:focus,
+  .wrapper form .field .textarea:focus,
+  .wrapper form .field .control select:focus{
+    border: 1px solid #fec107;
+  }
+  .wrapper form .field p{
+    font-size: 14px;
+    color: #757575;
+ }
+ .wrapper form .field .check{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+  }
+  .wrapper form .field .check input[type="checkbox"]{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  .wrapper form .field .check .checkmark{
+    width: 15px;
+    height: 15px;
+    border: 1px solid #fec107;
+    display: block;
+    position: relative;
+  }
+  .wrapper form .field .check input[type="checkbox"]:checked ~ .checkmark{
+    background: #fec107;
+  }
+  .wrapper form .field .button {
+    width: 100%;
+     padding: 8px 10px;
+    font-size: 15px; 
+    border: 0px;
+    background:  #fec107;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+  }
+  .wrapper form .field .button:hover{
+    background: #ffd658;
+  }
+  .wrapper .form .field:last-child{
+    margin-bottom: 0;
+  }
+  @media (max-width:420px) {
+    .wrapper form .field{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .wrapper form .field label{
+      margin-bottom: 5px;
+    }
+    .wrapper form .field.terms{
+      flex-direction: row;
+    }
+  }
